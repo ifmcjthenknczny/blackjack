@@ -48,7 +48,6 @@ for i in range(11,21):
   not_lose_prob += [not_lose*100/len(xx)]
 time_op = time()-start
 
-print("[Points right now, Probability of not losing with next card]")
 for points, prob in enumerate(not_lose_prob,11):
   print("For",points,"points, probabilty of not losing with next card is",round(prob,3),"%")
 print("Calculated in ",time_op,"s.",sep="")
